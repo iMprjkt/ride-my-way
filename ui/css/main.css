@@ -1,0 +1,35 @@
+body{
+    background: #ccc;
+}
+
+.container {
+    padding: 1.3rem;
+}
+
+input{
+
+        width: 90%;
+        border: 2px solid #212121;
+        padding: 10px;
+        margin-bottom:10px;
+}
+
+h1,
+h2,
+p{
+    text-align:center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.btn{
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
