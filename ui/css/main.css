@@ -131,7 +131,7 @@ a {
 }
 
 .login-form .wrapper .label {
-    color: #aaaaaa;
+    color: #dbdbdb;
     font-size: 13px;
     padding-bottom: .2rem;
 }
@@ -142,7 +142,7 @@ a {
 }
 
 .login-form .wrapper label .icon {
-    background: #ffffff1a;
+    background: #ffffff80;
     border-radius: 2px;
     display: inline-block;
     height: 15px;
