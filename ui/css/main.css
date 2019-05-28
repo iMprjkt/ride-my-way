@@ -82,6 +82,7 @@ a {
 .login .tab,
 .login-form .wrapper .label,
 .login-form .wrapper .button {
+    text-align: center;
     text-transform: uppercase;
 }
 
