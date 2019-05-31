@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     background: url(../assets/bg.jpg) no-repeat center;
     background-size: cover;
     color: #fafafa;

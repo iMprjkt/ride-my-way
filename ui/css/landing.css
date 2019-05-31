@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     background: url(../assets/bg.jpg) no-repeat center;
     background-size: cover;
     color: #fafafa;
@@ -85,7 +86,7 @@ img.sample-map {
 }
 
 img.avatar {
-    background-color:#ffffff;
+    background-color: #ffffff;
     border-color: #800080;
     border-radius: 50%;
     border-style: solid;
@@ -101,7 +102,7 @@ img.pin-location {
 h2,
 h3,
 p {
-    text-align:center;
+    text-align: center;
 }
 
 h2.greeting-heading {
