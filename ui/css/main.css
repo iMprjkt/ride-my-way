@@ -1,16 +1,17 @@
-body {
-    background: url(/assets/img/bg.jpg) no-repeat;
+body, html {
+    background: url(../assets/bg.jpg) no-repeat center;
     background-size: cover;
     color: #fafafa;
     font-family: 'Fira Sans', sans-serif;
-    margin: 0;
+    height: 100%;
+    margin: .5rem auto;
+    overflow: hidden;
 }
 
 h1 {
     font-family: 'Fira Sans';
     font-weight: bolder;
 }
-
 
 *,
 :after,
@@ -36,11 +37,11 @@ a {
 
 .login-wrap {
     background: #800080;
-    border-radius: .5rem;
+    border-radius: 1.3rem;
     box-shadow: 0 12px 15px 0 #00000057, 0 17px 50px 0 #00000036;
     margin: auto;
     min-height: 610px;
-    max-width: 377px;
+    max-width: 615px;
     position: relative;
     width: 100%;
 }
@@ -52,7 +53,7 @@ a {
 
 .login {
     background: #940094;
-    border-radius: .3rem;
+    border-radius: .5rem;
     height: 100%;
     padding: 55px 34px 21px 34px;
     position: absolute;
@@ -125,15 +126,16 @@ a {
 
 .login-form .wrapper .input,
 .login-form .wrapper .button {
-    background: #252525;
+    background: #800080;
     border: none;
-    border-radius: 8px;
+    border-radius: .8em;
+    font-size: 1em;
     padding: 13px 21px;
 }
 
 .login-form .wrapper .label {
     color: #dbdbdb;
-    font-size: 13px;
+    font-size: 1em;
     padding-bottom: .2rem;
 }
 
