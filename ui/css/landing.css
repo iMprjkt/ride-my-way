@@ -43,12 +43,32 @@ html {
     z-index: 10;
 }
 
+.user-btn {
+    background: none;
+    border: none;
+    display: contents;
+}
+
 .pin {
     align-self: end;
     grid-column: 5 / span 1;
     grid-row: 4;
     justify-self: center;
     padding: 21px;
+}
+
+.btn {
+    background: none;
+    border: none;
+}
+
+.btn:hover {
+    background: #00000021;
+    border-radius: 1.8rem;
+}
+
+.btn:active {
+    display: none;
 }
 
 .slider {
@@ -58,6 +78,8 @@ html {
     grid-column: 1 / span 5;
     grid-row: 5 / span 3;
     min-width: 100%;
+    transition: .5s
+    z-index: 1;
 }
 
 .greeting {
