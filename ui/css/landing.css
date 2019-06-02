@@ -70,24 +70,33 @@ html {
   display: none;
 }
 
-#destinationSlider {
+#destinationSlider.bottom-slider {
+  align-self: end;
   background: #b302b3;
   border-radius: 0.8rem;
+  bottom: 0;
   box-shadow: 5px 0 8px 0 #00000057, 5px 0 8px 0 #00000036;
-  grid-column: 1 / span 5;
-  grid-row: 5 / span 3;
+  display: grid;
+  grid-template-columns: 123px 1fr 1fr 1fr 123px;
+  grid-template-rows: 123px 1fr 1fr 123px 123px;
+  height: 20%;
+  position: absolute;
   min-width: 100%;
+  overflow-y: hidden;
   transition: 0.5s;
-  z-index: 3;
+  z-index: 7;
 }
 
 .greeting {
-  display: block;
-  margin: auto;
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+  margin-top: 0.8rem;
 }
 
 .destination-input {
-  display: contents;
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+  align-self: end;
 }
 
 input#locationInput.input {
@@ -120,7 +129,30 @@ input#locationInput.input {
   background-color: #800080;
 }
 
-#userProfile.sidenav {
+#locationList.location-list {
+  grid-column: 1 / span 5;
+  grid-row: 2 / span 4;
+  padding-top: 1rem;
+}
+
+.close-dest {
+  grid-column: 2 / span 3;
+  grid-row: 5 / span 1;
+}
+
+.dest-cls-btn {
+  background-color: #950095ef;
+  border: transparent;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+#userProfile.side-nav {
   background-color: #b302b3;
   border-radius: 1.3rem;
   display: grid;
@@ -147,16 +179,16 @@ a.closebtn {
   right: 1rem;
 }
 
-.sidenav a:hover {
+.side-nav a:hover {
   color: #950095;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {
+  .side-nav {
     padding-top: 15px;
   }
 
-  .sidenav a {
+  .side-nav a {
     font-size: 18px;
   }
 }
@@ -198,7 +230,7 @@ ul {
   padding-left: 0;
 }
 
-.signout {
+.sign-out {
   grid-column: 2 / span 3;
   grid-row: 5 / span 1;
   padding-top: 1.3rem;
