@@ -49,14 +49,6 @@ html {
     display: contents;
 }
 
-.pin {
-    align-self: end;
-    grid-column: 5 / span 1;
-    grid-row: 4;
-    justify-self: center;
-    padding: 21px;
-}
-
 .btn {
     background: none;
     border: none;
@@ -72,19 +64,31 @@ html {
 }
 
 #destinationSlider {
+    align-self: end;
     background: #b302b3;
     border-radius: .8rem;
     box-shadow: 5px 0 8px 0 #00000057, 5px 0 8px 0 #00000036;
     grid-column: 1 / span 5;
-    grid-row: 5 / span 3;
+    grid-row: 2 / span 5;
+    height: 100%;
     min-width: 100%;
     transition: .5s;
     z-index: 1;
 }
 
+
+a.closebtn {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 50px;
+    position: absolute;
+    right: 13px;
+}
+
 .greeting {
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .destination-input {
@@ -103,6 +107,29 @@ input#locationInput.input {
     padding: .8rem;
     text-align: center;
     width: 91%;
+}
+
+#locationList {
+    border-radius: .8rem;
+    font-size: 1.1rem;
+    margin: auto;
+    padding: .8rem;
+    width: 95%;
+
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    background-color: #ffffffdf;
+    border-radius: .8rem;
+    display: block;
+    font-weight: 500;
+    margin: .8rem 0 .8rem 0;
+    padding: .8rem;
+    list-style-type: none;
 }
 
 img {
@@ -125,6 +152,11 @@ img.avatar {
 
 img.pin-location {
     width: initial;
+}
+
+a {
+    color: #950095ef;
+    text-decoration: none;
 }
 
 h2,

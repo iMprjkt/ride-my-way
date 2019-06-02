@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/rides.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Ride My Way</title>
 </head>
@@ -18,19 +18,27 @@
         <div id="userAvatar" class="grid-item user">
             <button class="user-btn" onclick="location.href='user.html'"><img class="avatar" src="assets/avatar.png" alt="Avatar image"></button>
         </div>
-        <div class="grid-item pin">
-            <button class="btn"><img class="pin-location" src="assets/pin.png"></button>
-        </div>
         <div id="destinationSlider" class="grid-item slider">
             <div class="greeting">
+                    <a href="landing.html" class="closebtn" onclick="closeSlider()">&times;</a>
                 <h2 class="greeting-heading">Hi, Michael Angelo</h2>
             </div>
             <div class="destination-input">
                 <input id="locationInput" type="text" class="input" placeholder="Where are you going?">
             </div>
+            <div id="locationList" class="location-list">
+                <ul>
+                    <li><a href="#">Samaki Samaki, Haile Selassie Rd, Dar es Salaam</a></li>
+                    <li><a href="#">Royal Oven, Old Bagamoyo Rd, Dar es Salaam</a></li>
+                    <li><a href="#">Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es Salaam</a></li>
+                    <li><a href="#">Posta Mpya, Azikiwe Street, Dar es Salaam</a></li>
+                    <li><a href="#">Samaki Samaki, Haile Selassie Rd, Dar es Salaam</a></li>
+                    <li><a href="#">Royal Oven, Old Bagamoyo Rd, Dar es Salaam</a></li>
+                    <li><a href="#">Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es Salaam</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <script src="js/openSlider.js"></script>
 </body>
 
 </html>
