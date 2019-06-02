@@ -78,7 +78,7 @@ html {
     grid-column: 1 / span 5;
     grid-row: 5 / span 3;
     min-width: 100%;
-    transition: .5s
+    transition: .5s;
     z-index: 1;
 }
 
@@ -87,16 +87,27 @@ html {
     flex-direction: column;
 }
 
-input#location.input {
+.destination-input {
+    display: contents;
+}
+
+input#locationInput.input {
     background-color: #950095ef;
     border: transparent;
     border-radius: .8rem;
     color: #ffffff;
+    display: block;
     font-size: 1.1rem;
     font-weight: bold;
-    margin: .5rem;
+    margin: auto;
     padding: .8rem;
     text-align: center;
+    width: 95%;
+}
+
+.location-list {
+    height: 0;
+    overflow-y: hidden;
 }
 
 img {
