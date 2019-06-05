@@ -1,12 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-import DestList from "./DestList";
-
-const DestSlider = () => {
+const DestForm = () => {
   // class FormSelect extends Component {
   // 	render() {
   return (
-    <div id="destinationSlider" className="bottom-slider">
+    <div id="destinationSlider" className="dest-view">
       <div className="greeting">
         <h2 className="greeting-heading">Hi, Michael Angelo</h2>
       </div>
@@ -17,13 +16,14 @@ const DestSlider = () => {
           className="input"
           placeholder="Where are you going?"
         />
-        <button type="button" className="location-btn" onClick="openSld()">
-          Go
-        </button>
+        <NavLink exact to="/dest">
+          <button type="button" className="location-btn" onClick="openSld()">
+            Go
+          </button>
+        </NavLink>
       </div>
-      <DestList />
     </div>
   );
 };
 
-export default DestSlider;
+export default DestForm;

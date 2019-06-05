@@ -1,5 +1,5 @@
 import React from "react";
-import FormSelect from "../components/FormSelect";
+import LoginForm from "../components/LoginForm";
 import "../css/signin.css";
 
 const LoginPage = () => {
@@ -8,7 +8,7 @@ const LoginPage = () => {
       <div className="heading">
         <h1>RIDE MY WAY</h1>
       </div>
-      <FormSelect />
+      <LoginForm />
     </div>
   );
 };

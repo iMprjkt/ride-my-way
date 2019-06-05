@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import UserAvatar from "../components/UserAvatar";
 import MapOverlay from "../components/MapOverlay";
 import PositionPin from "../components/PositionPin";
-import DestSlider from "../components/DestSlider";
+import DestForm from "../components/DestForm";
 import "../css/app.css";
 
 // class Dash extends React.Component {
@@ -17,7 +17,7 @@ const Dash = () => {
       </NavLink>
       <MapOverlay />
       <PositionPin />
-      <DestSlider />
+      <DestForm />
     </div>
   );
 };

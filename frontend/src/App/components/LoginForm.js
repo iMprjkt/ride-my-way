@@ -3,7 +3,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const FormSelect = () => {
+const LoginForm = () => {
   // class FormSelect extends Component {
   // 	render() {
   return (
@@ -137,4 +137,4 @@ const FormSelect = () => {
   );
 };
 
-export default FormSelect;
+export default LoginForm;

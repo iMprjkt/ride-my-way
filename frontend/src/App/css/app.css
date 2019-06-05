@@ -59,7 +59,7 @@
 	display: none;
 }
 
-#destinationSlider.bottom-slider {
+.dest-view {
 	align-self: end;
 	background: #b302b3;
 	border-radius: 0.8rem;
@@ -68,12 +68,19 @@
 	display: grid;
 	grid-template-columns: 123px 1fr 1fr 1fr 123px;
 	grid-template-rows: 123px 1fr 1fr 123px 123px;
-	height: 100%;
 	position: absolute;
 	min-width: 100%;
 	overflow-y: hidden;
 	transition: 0.5s;
 	z-index: 7;
+}
+
+#destinationSlider.dest-view {
+	height: 20%;
+}
+
+#destination.dest-view {
+	height: 100%;
 }
 
 .greeting {
