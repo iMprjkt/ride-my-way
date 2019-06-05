@@ -1,39 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 
-class DestList extends Component {
-  render() {
-    return (
-      <div id="locationList" className="location-list">
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+const DestList = () => {
+  // class Destlist extends Component {
+  // 	render() {
+  return (
+    <div id="locationList" className="location-list">
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+      </button>
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es
+        Salaam
+      </button>
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+      </button>
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+      </button>
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+      </button>
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+      </button>
+      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+        Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+      </button>
+      <div className="close-dest">
+        <button type="button" className="dest-cls-btn" onClick="closeSld()">
+          Close
         </button>
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es
-          Salaam
-        </button>
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Samaki Samaki, Haile Selassie Rd, Dar es Salaam
-        </button>
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Samaki Samaki, Haile Selassie Rd, Dar es Salaam
-        </button>
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Samaki Samaki, Haile Selassie Rd, Dar es Salaam
-        </button>
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Samaki Samaki, Haile Selassie Rd, Dar es Salaam
-        </button>
-        <button className="wide-btn dest-btn" onclick="openLoc()">
-          Samaki Samaki, Haile Selassie Rd, Dar es Salaam
-        </button>
-        <div className="close-dest">
-          <button className="dest-cls-btn" onclick="closeSld()">
-            Close
-          </button>
-        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default DestList
+export default DestList;

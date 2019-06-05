@@ -1,15 +1,16 @@
-import React, { Component } from 'react'
+/* eslint-disable global-require */
+import React from "react";
 
-class UserAvatar extends Component {
-    render() {
-        return (
-            <div id="userAvatar" className="grid-item user">
-            <button className="user-btn" onclick="openNav()">
-              <img className="avatar" src={require("../assets/avatar.png")} />
-            </button>
-          </div>
-        )
-    }
-}
+const UserAvatar = () => {
+  // class UserAvatar extends React.Component {
+  // 	render() {
+  return (
+    <div id="userAvatar" className="grid-item user">
+      <button type="button" className="user-btn" onClick="openNav()">
+        <img className="avatar" src={require("../assets/avatar.png")} alt="" />
+      </button>
+    </div>
+  );
+};
 
-export default UserAvatar
+export default UserAvatar;

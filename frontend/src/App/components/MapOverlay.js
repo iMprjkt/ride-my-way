@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+/* eslint-disable global-require */
+import React from "react";
 
-class MapOverlay extends Component {
-    render() {
-        return (
-            <div className="grid-item map-overlay">
-            <img className="sample-map" src={require("../assets/map.png")} />
-          </div>
-        )
-    }
-}
+const MapOverlay = () => {
+  // class MapOverlay extends Component {
+  // 	render() {
+  return (
+    <div className="grid-item map-overlay">
+      <img className="sample-map" src={require("../assets/map.png")} alt="" />
+    </div>
+  );
+};
 
-export default MapOverlay
+export default MapOverlay;

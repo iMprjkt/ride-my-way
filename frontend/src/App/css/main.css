@@ -1,0 +1,14 @@
+body,
+html {
+	background: url(../assets/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: #fafafa;
+	font-family: "Fira Sans", sans-serif;
+	height: 100%;
+	margin: 0.5rem auto;
+	overflow: hidden;
+}
+
+.login-link {
+	color: #ffffff;
+}

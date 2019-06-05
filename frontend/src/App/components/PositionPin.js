@@ -1,15 +1,20 @@
-import React, { Component } from 'react'
+/* eslint-disable global-require */
+import React from "react";
 
-class PositionPin extends Component {
-    render() {
-        return (
-            <div className="grid-item pin">
-            <button className="btn">
-              <img className="pin-location" src={require("../assets/pin.png")} />
-            </button>
-          </div>
-        )
-    }
-}
+// class PositionPin extends React.Component {
+// 	render() {
+const PositionPin = () => {
+  return (
+    <div className="grid-item pin">
+      <button type="button" className="btn">
+        <img
+          className="pin-location"
+          src={require("../assets/pin.png")}
+          alt=""
+        />
+      </button>
+    </div>
+  );
+};
 
-export default PositionPin
+export default PositionPin;

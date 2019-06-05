@@ -1,15 +1,30 @@
-import React, { Component } from "react";
-import UserLinks from './UserLinks'
+/* eslint-disable global-require */
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-class UserProfile extends Component {
-  render() {
-    return (
+import UserLinks from "./UserLinks";
+
+// class UserProfile extends React.Component {
+// 	render() {
+const UserProfile = () => {
+  return (
+    <div className="app-wrap">
       <div id="userProfile" className="side-nav">
-        <button className="sidenav-cls-btn" onclick="closeNav()">
-        &times;
-        </button>
+        <NavLink exact to="/dash">
+          <button
+            type="button"
+            className="sidenav-cls-btn"
+            onClick="closeNav()"
+          >
+            &times;
+          </button>
+        </NavLink>
         <header className="user">
-          <img className="user-avatar" src={require("../assets/avatar.png")} />
+          <img
+            className="user-avatar"
+            src={require("../assets/avatar.png")}
+            alt=""
+          />
           <h1 className="user">Michael Angelo</h1>
         </header>
         <div className="ride-given">
@@ -22,13 +37,19 @@ class UserProfile extends Component {
         </div>
         <UserLinks />
         <div className="sign-out">
-          <button className="signout-btn" onclick="location.href='index.html'">
-            Sign out
-          </button>
+          <NavLink exact to="/">
+            <button
+              type="button"
+              className="signout-btn"
+              onClick="location.href='index.html'"
+            >
+              Sign out
+            </button>
+          </NavLink>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default UserProfile
+export default UserProfile;

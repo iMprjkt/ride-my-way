@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/landing.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Ride My Way</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/landing.css" />
-  <link
-  href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600&display=swap"
-  rel="stylesheet" />
-  <title>Ride My Way</title>
-</head>
-
-<body>
-  <div class="landing-wrap">
-    <div class="grid-item map-overlay">
-      <img class="sample-map" src="assets/map.png" alt="Sample map" />
-    </div>
-    <div id="userAvatar" class="grid-item user">
-      <button class="user-btn" onclick="openNav()">
-        <img class="avatar" src="assets/avatar.png" alt="Avatar image" />
-      </button>
-    </div>
-    <div class="grid-item pin">
-      <button class="btn">
-        <img class="pin-location" src="assets/pin.png" />
-      </button>
-    </div>
-    <div id="destinationSlider" class="bottom-slider">
-      <div class="greeting">
-        <h2 class="greeting-heading">Hi, Michael Angelo</h2>
-      </div>
-      <div id="destinationInput" class="destination-input">
-        <input id="locationInput" type="text" class="input" placeholder="Where are you going?" />
-        <button class="location-btn" onclick="openSld()">
-          Go
-        </button>
-      </div>
-      <div id="locationList" class="location-list">
-        <ul>
-          <li><a href="#">Samaki Samaki, Haile Selassie Rd, Dar es Salaam</a></li>
-          <li><a href="#">Royal Oven, Old Bagamoyo Rd, Dar es Salaam</a></li>
-          <li><a href="#">Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es Salaam</a></li>
-          <li><a href="#">Posta Mpya, Azikiwe Street, Dar es Salaam</a></li>
-          <li><a href="#">Samaki Samaki, Haile Selassie Rd, Dar es Salaam</a></li>
-          <li><a href="#">Royal Oven, Old Bagamoyo Rd, Dar es Salaam</a></li>
-          <li><a href="#">Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es Salaam</a></li>
-        </ul>
-      </div>
-      <div class="close-dest">
-        <button class="dest-cls-btn" onclick="closeSld()">
-          Close
-        </button>
-      </div>
-    </div>
-    <div id="userProfile" class="side-nav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <header class="user">
-        <img class="user-avatar" src="assets/avatar.png" alt="User image" />
-        <h1 class="user">Michael Angelo</h1>
-      </header>
-      <div class="ride-given">
-        <h2 class="ride-given">34</h2>
-        <p class="ride-given">Rides Given</p>
-      </div>
-      <div class="ride-taken">
-        <h2 class="ride-taken">55</h2>
-        <p class="ride-taken">Rides Taken</p>
-      </div>
-      <div id="userLinks" class="user-links">
-        <ul>
-          <li><a href="#">Past Rides</a></li>
-          <li><a href="#">Requested Rides</a></li>
-        </ul>
-      </div>
-      <div class="sign-out">
-        <button class="signout-btn" onclick="location.href='index.html'">
-          Sign out
-        </button>
-      </div>
-    </div>
-  </div>
-  <script src="js/openSlider.js"></script>
-</body>
-
+	<body>
+		<div class="landing-wrap">
+			<div class="grid-item map-overlay">
+				<img class="sample-map" src="assets/map.png" alt="Sample map" />
+			</div>
+			<div id="userAvatar" class="grid-item user">
+				<button class="user-btn" onclick="openNav()">
+					<img class="avatar" src="assets/avatar.png" alt="Avatar image" />
+				</button>
+			</div>
+			<div class="grid-item pin">
+				<button class="btn">
+					<img class="pin-location" src="assets/pin.png" />
+				</button>
+			</div>
+			<div id="destinationSlider" class="bottom-slider">
+				<div class="greeting">
+					<h2 class="greeting-heading">Hi, Michael Angelo</h2>
+				</div>
+				<div id="destinationInput" class="destination-input">
+					<input
+						id="locationInput"
+						type="text"
+						class="input"
+						placeholder="Where are you going?"
+					/>
+					<button class="location-btn" onclick="openSld()">
+						Go
+					</button>
+				</div>
+				<div id="locationList" class="location-list">
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+					</button>
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es
+						Salaam
+					</button>
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+					</button>
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+					</button>
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+					</button>
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+					</button>
+					<button class="wide-btn dest-btn" onclick="openLoc()">
+						Samaki Samaki, Haile Selassie Rd, Dar es Salaam
+					</button>
+					<div class="close-dest">
+						<button class="dest-cls-btn" onclick="closeSld()">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="userProfile" class="side-nav">
+				<button class="sidenav-cls-btn" onclick="closeNav()">
+					&times;
+				</button>
+				<header class="user">
+					<img class="user-avatar" src="assets/avatar.png" alt="User image" />
+					<h1 class="user">Michael Angelo</h1>
+				</header>
+				<div class="ride-given">
+					<h2 class="ride-given">34</h2>
+					<p class="ride-given">Rides Given</p>
+				</div>
+				<div class="ride-taken">
+					<h2 class="ride-taken">55</h2>
+					<p class="ride-taken">Rides Taken</p>
+				</div>
+				<div id="userLinks" class="user-links">
+					<button class="wide-btn user-links-btn" onclick="openLoc()">
+						Past Rides
+					</button>
+					<button class="wide-btn user-links-btn" onclick="openLoc()">
+						Requested Rides
+					</button>
+				</div>
+				<div class="sign-out">
+					<button class="signout-btn" onclick="location.href='index.html'">
+						Sign out
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/openSlider.js"></script>
+	</body>
 </html>
