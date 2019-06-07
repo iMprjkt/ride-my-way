@@ -17,7 +17,7 @@ export default function DestForm() {
           placeholder="Where are you going?"
         />
         <NavLink exact to="/dest">
-          <button type="button" className="location-btn" onClick="openSld()">
+          <button type="button" className="location-btn">
             Go
           </button>
         </NavLink>

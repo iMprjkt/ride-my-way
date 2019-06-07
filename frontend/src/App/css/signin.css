@@ -217,3 +217,50 @@ span.icon {
 .login-link {
 	font-size: 1.1rem;
 }
+
+div.verify {
+	grid-column: 1 / span 5;
+	grid-row: 2 / span 3;
+	text-align: center;
+}
+
+.x-cls-btn {
+	background: none;
+	border: none;
+	color: #ffffff;
+	font-size: 3rem;
+	font-weight: 600;
+	position: absolute;
+	right: 1rem;
+	top: 0.5rem;
+}
+
+.x-cls-btn:hover {
+	color: #2a77fb;
+}
+
+.verify-btn {
+	background: #1161ee;
+	border: none;
+	border-radius: 0.8em;
+	color: #ffffff;
+	font-size: 1em;
+	padding: 13px 21px;
+	width: 95%;
+}
+
+.verify-label {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+#codeInput.input {
+	background: #940094;
+	border: none;
+	border-radius: 0.8em;
+	font-size: 1em;
+	margin-bottom: 1.5rem;
+	margin-top: 0.3rem;
+	padding: 13px 21px;
+	width: 95%;
+}

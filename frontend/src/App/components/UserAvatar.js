@@ -6,7 +6,7 @@ export default function UserAvatar() {
   // 	render() {
   return (
     <div id="userAvatar" className="grid-item user">
-      <button type="button" className="user-btn" onClick="openNav()">
+      <button type="button" className="user-btn">
         <img className="avatar" src={require("../assets/avatar.png")} alt="" />
       </button>
     </div>

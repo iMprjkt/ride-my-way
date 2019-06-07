@@ -40,7 +40,7 @@ class LoginForm extends React.Component {
               Email
               <input
                 className="input"
-                id="loginInput"
+                // id="loginInput"
                 type="email"
                 name="user"
                 placeholder="Email"
@@ -89,7 +89,7 @@ class LoginForm extends React.Component {
             <h4>password: verystrong</h4>
           </div>
         </form>
-        <div className="signup-form">
+        <form className="signup-form">
           <div className="wrapper">
             <label htmlFor="user" className="label">
               Username
@@ -105,7 +105,7 @@ class LoginForm extends React.Component {
             <label htmlFor="pass" className="label">
               Password
               <input
-                id="pass"
+                // id="signUpPass"
                 type="password"
                 className="input"
                 data-type="password"
@@ -117,7 +117,7 @@ class LoginForm extends React.Component {
             <label htmlFor="pass" className="label">
               Repeat Password
               <input
-                id="pass"
+                // id="signupPassVer"
                 type="password"
                 className="input"
                 data-type="password"
@@ -129,7 +129,7 @@ class LoginForm extends React.Component {
             <label htmlFor="pass" className="label">
               Email Address
               <input
-                id="pass"
+                // id="signupEmail"
                 type="text"
                 className="input"
                 placeholder="Email Address"
@@ -137,7 +137,7 @@ class LoginForm extends React.Component {
             </label>
           </div>
           <div className="wrapper">
-            <NavLink exact to="/dash">
+            <NavLink exact to="/verify">
               <button type="button" className="button">
                 Sign Up
               </button>
@@ -152,7 +152,7 @@ class LoginForm extends React.Component {
               </NavLink>
             </p>
           </div>
-        </div>
+        </form>
       </div>
     );
   }

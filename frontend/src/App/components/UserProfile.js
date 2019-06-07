@@ -11,11 +11,7 @@ export default function UserProfile() {
     <div className="app-wrap">
       <div id="userProfile" className="side-nav">
         <NavLink exact to="/dash">
-          <button
-            type="button"
-            className="sidenav-cls-btn"
-            onClick="closeNav()"
-          >
+          <button type="button" className="x-cls-btn">
             &times;
           </button>
         </NavLink>
@@ -38,11 +34,7 @@ export default function UserProfile() {
         <UserLinks />
         <div className="sign-out">
           <NavLink exact to="/">
-            <button
-              type="button"
-              className="signout-btn"
-              onClick="location.href='index.html'"
-            >
+            <button type="button" className="signout-btn">
               Sign out
             </button>
           </NavLink>

@@ -6,35 +6,35 @@ export default function DestList() {
   // 	render() {
   return (
     <div id="locationList" className="location-list">
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Samaki Samaki, Haile Selassie Rd, Dar es Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es
         Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Samaki Samaki, Haile Selassie Rd, Dar es Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Samaki Samaki, Haile Selassie Rd, Dar es Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Samaki Samaki, Haile Selassie Rd, Dar es Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Samaki Samaki, Haile Selassie Rd, Dar es Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Samaki Samaki, Haile Selassie Rd, Dar es Salaam
       </button>
-      <button type="button" className="wide-btn dest-btn" onClick="openLoc()">
+      <button type="button" className="wide-btn dest-btn">
         Julius Nyerere International Airport, Julius K. Nyerere Rd, Dar es
         Salaam
       </button>
       <div className="close-dest">
         <NavLink exact to="/dash">
-          <button type="button" className="dest-cls-btn" onClick="closeSld()">
+          <button type="button" className="dest-cls-btn">
             Close
           </button>
         </NavLink>

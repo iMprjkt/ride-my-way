@@ -18,7 +18,7 @@ export default function Destination() {
             className="input"
             placeholder="Where are you going?"
           />
-          <button type="button" className="location-btn" onClick="openSld()">
+          <button type="button" className="location-btn">
             Go
           </button>
         </div>
