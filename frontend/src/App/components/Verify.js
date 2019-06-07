@@ -26,39 +26,39 @@ class Verify extends React.Component {
   render() {
     return (
       <div className="app-wrap">
-        <div className="verify">
+        <div className="form-wrap">
           <NavLink exact to="/">
             <button type="button" className="x-cls-btn">
               &times;
             </button>
           </NavLink>
-          <header className="verify">
+          <header className="info">
             <h1 className="user">User verification</h1>
             <p>Please enter the verification code sent to your email address</p>
           </header>
           <form
-            className="verify-form"
+            className="input-form"
             ref={input => (this.signInForm = input)}
             onSubmit={valid => {
               this.putCode(valid);
             }}
           >
             <div className="wrapper">
-              <label htmlFor="codeInput" className="verify-label">
+              <label htmlFor="codeInput" className="input-label">
                 Verification code
                 <input
                   className="input"
                   id="codeInput"
                   type="value"
                   name="code"
-                  placeholder="Verification code"
+                  placeholder="Enter Email"
                   ref={input => (this.code = input)}
                   required
                 />
               </label>
             </div>
             <div className="wrapper">
-              <button className="verify-btn" type="submit" name="button">
+              <button className="send-btn" type="submit" name="button">
                 Sign in
               </button>
             </div>

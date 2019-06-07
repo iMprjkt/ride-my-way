@@ -79,7 +79,7 @@ class LoginForm extends React.Component {
           </div>
           <div className="hr" />
           <div className="footer">
-            <NavLink exact to="/">
+            <NavLink exact to="/forgotpass">
               <div className="login-link">Forgot Password</div>
             </NavLink>
           </div>
@@ -142,15 +142,6 @@ class LoginForm extends React.Component {
                 Sign Up
               </button>
             </NavLink>
-          </div>
-          <div className="hr" />
-          <div className="footer">
-            <p>
-              Already a member?
-              <NavLink exact to="/" className="login-link">
-                Sign In
-              </NavLink>
-            </p>
           </div>
         </form>
       </div>
