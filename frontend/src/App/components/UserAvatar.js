@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import React from "react";
 
-const UserAvatar = () => {
+export default function UserAvatar() {
   // class UserAvatar extends React.Component {
   // 	render() {
   return (
@@ -11,6 +11,4 @@ const UserAvatar = () => {
       </button>
     </div>
   );
-};
-
-export default UserAvatar;
+}

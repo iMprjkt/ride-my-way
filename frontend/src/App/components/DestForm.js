@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const DestForm = () => {
+export default function DestForm() {
   // class FormSelect extends Component {
   // 	render() {
   return (
@@ -24,6 +24,4 @@ const DestForm = () => {
       </div>
     </div>
   );
-};
-
-export default DestForm;
+}

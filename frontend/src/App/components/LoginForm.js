@@ -1,49 +1,67 @@
+/* eslint-disable no-console */
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable consistent-return */
+/* eslint-disable no-return-assign */
+/* eslint-disable class-methods-use-this */
+/* eslint-disable react/destructuring-assignment */
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
-const LoginForm = () => {
-  // class FormSelect extends Component {
-  // 	render() {
-  return (
-    <div className="login">
-      <input
-        id="signin"
-        type="radio"
-        name="tab"
-        className="sign-in"
-        defaultChecked
-      />
-      <label htmlFor="signin" className="tab">
-        Sign In
-      </label>
-      <input id="signup" type="radio" name="tab" className="sign-up" />
-      <label htmlFor="signup" className="tab">
-        Sign Up
-      </label>
+class LoginForm extends React.Component {
+  signIn(valid) {
+    valid.preventDefault();
+    if (this.authUser(this.email.value, this.password.value)) {
+      this.props.history.push("/dash");
+    } else {
+      console.log("Try again");
+    }
+  }
+
+  authUser(email, password) {
+    if (email === "michael@ridemy.way" && password === "verystrong") {
+      return true;
+    }
+  }
+
+  render() {
+    return (
       <div className="login-form">
-        <div className="signin-form">
+        <form
+          className="signin-form"
+          ref={input => (this.signInForm = input)}
+          onSubmit={valid => {
+            this.signIn(valid);
+          }}
+        >
           <div className="wrapper">
-            <label htmlFor="user" className="label">
-              Username
+            <label htmlFor="loginInput" className="label">
+              Email
               <input
-                id="user"
-                type="text"
                 className="input"
-                placeholder="Username"
+                id="loginInput"
+                type="email"
+                name="user"
+                placeholder="Email"
+                ref={input => (this.email = input)}
+                required
               />
             </label>
           </div>
           <div className="wrapper">
-            <label htmlFor="pass" className="label">
-              Password
+            <label htmlFor="loginPassword" className="label">
+              Password:
+              {" "}
               <input
-                id="pass"
+                id="loginPassword"
+                ref={input => (this.password = input)}
                 type="password"
                 className="input"
                 data-type="password"
+                name="password"
                 placeholder="Password"
+                required
               />
             </label>
           </div>
@@ -55,11 +73,9 @@ const LoginForm = () => {
             </label>
           </div>
           <div className="wrapper">
-            <NavLink exact to="/dash">
-              <button type="button" className="button">
-                Sign in
-              </button>
-            </NavLink>
+            <button className="button" type="submit" name="button">
+              Sign in
+            </button>
           </div>
           <div className="hr" />
           <div className="footer">
@@ -67,7 +83,12 @@ const LoginForm = () => {
               <div className="login-link">Forgot Password</div>
             </NavLink>
           </div>
-        </div>
+          <div className="creds">
+            <h4>Testing details</h4>
+            <h4>email: michael@ridemy.way</h4>
+            <h4>password: verystrong</h4>
+          </div>
+        </form>
         <div className="signup-form">
           <div className="wrapper">
             <label htmlFor="user" className="label">
@@ -133,8 +154,8 @@ const LoginForm = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
-export default LoginForm;
+export default withRouter(LoginForm);

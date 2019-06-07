@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import React from "react";
 
-const MapOverlay = () => {
+export default function MapOverlay() {
   // class MapOverlay extends Component {
   // 	render() {
   return (
@@ -9,6 +9,4 @@ const MapOverlay = () => {
       <img className="sample-map" src={require("../assets/map.png")} alt="" />
     </div>
   );
-};
-
-export default MapOverlay;
+}

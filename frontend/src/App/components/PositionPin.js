@@ -3,7 +3,7 @@ import React from "react";
 
 // class PositionPin extends React.Component {
 // 	render() {
-const PositionPin = () => {
+export default function PositionPin() {
   return (
     <div className="grid-item pin">
       <button type="button" className="btn">
@@ -15,6 +15,4 @@ const PositionPin = () => {
       </button>
     </div>
   );
-};
-
-export default PositionPin;
+}

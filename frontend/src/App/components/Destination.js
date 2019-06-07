@@ -2,7 +2,7 @@ import React from "react";
 
 import DestList from "./DestList";
 
-const Destination = () => {
+export default function Destination() {
   // class FormSelect extends Component {
   // 	render() {
   return (
@@ -26,6 +26,4 @@ const Destination = () => {
       </div>
     </div>
   );
-};
-
-export default Destination;
+}

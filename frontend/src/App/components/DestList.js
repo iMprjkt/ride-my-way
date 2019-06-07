@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const DestList = () => {
+export default function DestList() {
   // class Destlist extends Component {
   // 	render() {
   return (
@@ -41,6 +41,4 @@ const DestList = () => {
       </div>
     </div>
   );
-};
-
-export default DestList;
+}

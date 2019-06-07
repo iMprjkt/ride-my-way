@@ -6,7 +6,7 @@ import UserLinks from "./UserLinks";
 
 // class UserProfile extends React.Component {
 // 	render() {
-const UserProfile = () => {
+export default function UserProfile() {
   return (
     <div className="app-wrap">
       <div id="userProfile" className="side-nav">
@@ -50,6 +50,4 @@ const UserProfile = () => {
       </div>
     </div>
   );
-};
-
-export default UserProfile;
+}

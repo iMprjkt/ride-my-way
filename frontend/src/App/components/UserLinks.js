@@ -2,7 +2,7 @@ import React from "react";
 
 // class UserLinks extends React.Component {
 // 	render() {
-const UserLinks = () => {
+export default function UserLinks() {
   return (
     <div id="userLinks" className="user-links">
       <button
@@ -21,6 +21,4 @@ const UserLinks = () => {
       </button>
     </div>
   );
-};
-
-export default UserLinks;
+}
